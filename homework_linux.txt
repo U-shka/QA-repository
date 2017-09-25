@@ -1,0 +1,9 @@
+mkdir homework
+cd homework
+touch date_{A..E}.txt
+for file in $(find . -name"date_*")
+do date > $file
+done
+greb -or 2017| wc-1
+cd..
+rm-rf homework/      
